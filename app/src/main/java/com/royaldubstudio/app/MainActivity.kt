@@ -1,12 +1,11 @@
+
 package com.royaldubstudio.app
-MainActivity.kt. 
+
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -84,27 +83,37 @@ fun RoyalDubApp() {
 
                     RoyalButton("Fina-finai", RoyalBlue) {
                         val url = "https://royal-dub-studio-official-website-kf7xnj.v2.appdeploy.ai/"
-                        context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
+                        context.startActivity(
+                            Intent(Intent.ACTION_VIEW, Uri.parse(url))
+                        )
                     }
 
                     RoyalButton("Facebook", RoyalBlue) {
                         val url = "https://www.facebook.com/share/1EME3R5q8U/"
-                        context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
+                        context.startActivity(
+                            Intent(Intent.ACTION_VIEW, Uri.parse(url))
+                        )
                     }
 
                     RoyalButton("YouTube - Royal Movies", RoyalBlue) {
                         val url = "https://youtube.com/@royalmovies02?si=zEjlaAipBdA6l1ad"
-                        context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
+                        context.startActivity(
+                            Intent(Intent.ACTION_VIEW, Uri.parse(url))
+                        )
                     }
 
                     RoyalButton("WhatsApp - Tuntube mu", RoyalBlue) {
                         val url = "https://wa.me/2349016908705"
-                        context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
+                        context.startActivity(
+                            Intent(Intent.ACTION_VIEW, Uri.parse(url))
+                        )
                     }
 
                     RoyalButton("TikTok", RoyalBlue) {
                         val url = "https://www.tiktok.com/@royaldubstudio"
-                        context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
+                        context.startActivity(
+                            Intent(Intent.ACTION_VIEW, Uri.parse(url))
+                        )
                     }
 
                     Spacer(modifier = Modifier.height(25.dp))
